@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+/* make map smaller/larger*/
+.overlay img {
+    margin: 0 auto;
+}
+.overlay {
+    background-color: rgba(0,0,0,.7);
+    height: 140px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    flex-flow: column;
+}
+#map {  
+    height: 760px;
+    align-items: flex-end;
+}
+/*button stuff*/
+button, span {
+    min-width: 200px;
+    min-height: 40px;
+    border-radius: 10px;
+    margin: 1rem 0;
+    cursor: pointer;
+    color: white;
+    border:none;
+    background-color: unset;
+}
+#map .btn-hide, .rejectCookie { 
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1000;
+}
+.acceptCookie, span {
+    color:white;
+    margin: 0 auto;
+}
+.acceptCookie {
+    border: 1px solid white;
+}
+.hide {
+    z-index: 1000;
+}
+/*popup styles*/
+.leaflet-popup-content-wrapper {
+    border-radius: unset;
+}
+.leaflet-popup {
+    top: 20px;
+}
+.leaflet-popup-content {
+  min-width: 300px;
+  width: 100%;
+}
+.leaflet-popup-tip-container {
+    display:none;
+}
+.card-popup {
+  display: flex;
+  flex-flow: row;
+}
+.card-popup .more:before {
+  content: ">>";
+}
+/*cookie consent overlay*/
+.consent-overlay {
+    background-image: url(consent_overlay.png);
+    background-repeat: no-repeat;
+    height: 760px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    display: none;
+}
+.noconsent {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;  
+}

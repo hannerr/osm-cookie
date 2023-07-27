@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <base target="_top" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GeoJSON - Leaflet</title>
+    <link rel="stylesheet" href="leaflet/leaflet.css" />
+    <link rel="stylesheet" href="src/osm_map.css"/>
+  </head>
+  <body>
+    
+    <div id="map" class="flex-center">
+      <button class="btn-hide" onclick="hideMap()">Karte verbergen</button>
+    </div>
+   
+    <div class="overlay flex-center">
+      <img src="src/ico_pin.svg" alt="white pin" height="35px" width="26px">
+      <button class="btn-show" onclick="showMap()">Karte zeigen</button>
+    </div>
+
+    <article class="consent-overlay noconsent">
+      <span>
+        Hier würden wir Ihnen gerne eine Karte zeigen. Dafür müssen Sie bitte unsere Cookies akzeptieren!
+        Im Hintergrund liegt ein Bild der Karte, die eigentliche Karte wird erst beim akzeptieren geladen!
+      </span>
+      <button class="acceptCookie">Cookies akzeptieren</button>
+    </article>
+    
+    <button class="rejectCookie" style="display:none;">Einwilligung widerrufen</button>
+
+    <script src="src/geojson_data.js" type="text/javascript"></script>
+    <script src="src/consent.js" type="text/javascript"></script>
+  </body>
+</html>

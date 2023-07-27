@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="ico-map-route" transform="translate(-851 -544)">
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(851 544)" fill="#fff" stroke="#ccc" stroke-width="1">
+      <circle cx="20" cy="20" r="20" stroke="none"/>
+      <circle cx="20" cy="20" r="19.5" fill="none"/>
+    </g>
+    <g id="Gruppe_252" data-name="Gruppe 252" transform="translate(857 550)">
+      <rect id="Rechteck_164" data-name="Rechteck 164" width="19.799" height="19.799" transform="matrix(0.707, -0.707, 0.707, 0.707, 0, 14)" fill="#0090f8"/>
+      <path id="Pfad_102" data-name="Pfad 102" d="M28.049,20.5l-3.5-3.5v2.333h-10.5v5.833h2.333v-3.5h8.167V24Z" transform="translate(-5.854 -7.083)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
