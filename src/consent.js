@@ -13,7 +13,7 @@ function loadScript(url, callback)
     script.onload = callback;
     document.body.appendChild(script);
 }
-const leafleturl = "http://127.0.0.1:5500/osm_geojson_consent/leaflet/leaflet.js";
+const leafleturl = "http://127.0.0.1:5500/lemon/osm_geojson_consent/leaflet/leaflet.js";
 
 document.addEventListener("DOMContentLoaded", function() {
     if (document.cookie.length!=0) {
@@ -39,14 +39,15 @@ rejectCookie.addEventListener("click", function() {
 let mapcanvas = document.getElementById("map");
 let overlay = document.querySelector(".overlay");
 let btnhide = document.querySelector(".btn-hide");
+let btnshow = document.querySelector(".btn-show");
 
-function showMap() {
+btnshow.addEventListener("click", function() {
     overlay.classList.toggle("hide");
     mapcanvas.style.height= "760px";
     btnhide.style.display= "block";
-}
-function hideMap() {
+});
+btnhide.addEventListener("click", function() {
     overlay.classList.toggle("hide");
     mapcanvas.style.height= "140px";
     btnhide.style.display= "none";
-}
+});
