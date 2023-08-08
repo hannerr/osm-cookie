@@ -9,6 +9,7 @@ After consent, a cookie "osmcookie" is set.
 The map is expanable on click.
 
 ## Getting Started
+needs to be run on local server http://127.0.0.1:5500/
 
 ### Dependencies
 
